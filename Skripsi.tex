@@ -26,6 +26,11 @@
 % Judul Laporan
 \include{halaman_judul}
 
+% Lembar Pengesahan
+\phantomsection \addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
+\include{pengesahan}
+
+
 % Lembar Pernyataan
 \phantomsection \addcontentsline{toc}{chapter}{LEMBAR PERNYATAAN}
 \include{pernyataan}
@@ -34,21 +39,21 @@
 \phantomsection \addcontentsline{toc}{chapter}{LEMBAR PERSETUJUAN}
 \include{persetujuan}
 
-% Lembar Pengesahan
-\phantomsection \addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
-\include{pengesahan}
-
-% Lembar Abstract
-\phantomsection \addcontentsline{toc}{chapter}{ABSTRACT}
-\include{abstract}
+% Kata Pengantar
+\phantomsection \addcontentsline{toc}{chapter}{KATA PENGANTAR}
+\include{kata_pengantar}
 
 % Lembar Abstrak
 \phantomsection \addcontentsline{toc}{chapter}{ABSTRAK}
 \include{abstrak}
 
-% Kata Pengantar
-\phantomsection \addcontentsline{toc}{chapter}{KATA PENGANTAR}
-\include{kata_pengantar}
+% Lembar Abstract
+\phantomsection \addcontentsline{toc}{chapter}{ABSTRACT}
+\include{abstract}
+
+
+
+
 
 \vspace*{-2.5cm}
 \tableofcontents
@@ -65,6 +70,8 @@
 \phantomsection
 \addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
 \clearpage
+
+% KURANG DAFTAR LAMPIRAN
 
 % Gunakan penomeran Arab (1, 2, 3, ...) setelah bagian ini.
 \pagenumbering{arabic}
