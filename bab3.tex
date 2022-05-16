@@ -47,19 +47,123 @@
       \section{Metode Tugas Akhir}
       Metode yang digunakan dalam pengerjaan tugas akhir ini
       \begin{enumerate}
-         \item Alur pengembangan tugas akhir.
-         \begin{figure}[ht]
-            \centering
-            \includegraphics[width=7cm]{images/UI/Frame 1.png}
-            \caption{\textit{Flow Chart} Alur Pengembangan Tugas Akhir}
-        \end{figure}
+      %    \item Alur pengembangan tugas akhir.
+      %    \begin{figure}[ht]
+      %       \centering
+      %       \includegraphics[width=7cm]{images/UI/Frame 1.png}
+      %       \caption{\textit{Flow Chart} Alur Pengembangan Tugas Akhir}
+      %   \end{figure}
          \item Metode pengembangan yang digunakan adalah \textit{Rapid Application Development} (RAD)
          \item Cara pengumpulan data yang digunakan adalah kuesioner dan pengujian\\
       \end{enumerate}
 
       \section{Ilustrasi Perhitungan Metode}
+      Pengujian penerimaan aplikasi oleh pengguna dilakukan dengan menggunakan metode pengujian UAT, skala 
+      \emph{likert} digunakan untuk menilai bobot dari hasil pengisian kuesioner. Bobot jawaban kuesioner \cite{kuantitatif}
+      dapat dilihat bada Tabel 3.1
+      \begin{table}[ht]
+         \centering
+         \caption{Bobot nilai jawaban}
+         \begin{tabular}{|>{\raggedright}p{5cm}|p{2.5cm}|>{\raggedright}p{5cm}|}
+          \hline
+          \multicolumn{1}{|c}{\bfseries Jawaban} & \multicolumn{1}{|c|}{\bfseries Bobot} \\ 
+           \hline
+         \begin{center}
+            Sangat Setuju
+         \end{center} &
+            \begin{center}
+               5
+            \end{center}
+              \tabularnewline
+              \hline
+         \begin{center}
+            Setuju
+         \end{center} &
+               \begin{center}
+                 4
+            \end{center}
+             \tabularnewline
+           \hline
+         \begin{center}
+            Netral
+         \end{center} &
+               \begin{center}
+                 3
+            \end{center}
+             \tabularnewline
+           \hline
+         \begin{center}
+            Tidak Setuju
+         \end{center} &
+               \begin{center}
+                2
+            \end{center}
+             \tabularnewline
+           \hline
+         \begin{center}
+            Sangat Tidak Setuju
+         \end{center} &
+               \begin{center}
+                1
+            \end{center}
+             \tabularnewline
+           \hline
+          \end{tabular}
+         \end{table}
+         \newline setelah dilakukan pengisian kuesioner dan didapatkan data responden, data kemudian diolah dengan cara mengalikan data jawaban dengan bobot yang tertera pada tabel 3.1. Kemudian hasil tersebut dijumlahkan dan hasilnya dikalikan dengan bobot jawaban :
+         \begin{itemize}
+            \item Jumlah skor responden Sangat Setuju (SS)  = Total x 5 = nilai SS
+            \item Jumlah skor responden Setuju (S)  = Total x 4 = nilai S
+            \item Jumlah skor responden Netral (N)  = Total x 3 = nilai N
+            \item Jumlah skor responden Tidak Setuju (TS)  = Total x 2 = nilai TS
+            \item Jumlah skor responden Sangat Tidak Setuju (STS)  = Total x 1 = nilai STS
+         \end{itemize}
+         Maka akan diketahu jumlah skor total = nilai SS + nilai S + nilai N + nilai TS + nilai STS
+         \\\newline Setelah didapatkan jumlah skor total, selanjutnya mencari nilai terendah dan tertinggi. Misalnya ada 5 orang responden, maka dapat dihitung:
+         \begin{itemize}
+            \item Nilai terendah = 5 x jumlah pertanyaan x 1 = (jika jawaban STS semua)
+            \item Nilai tertinggi = 5 x jumlah pertanyaan x 5 = (jika jawaban SS semua)
+         \end{itemize}
+         \noindent Setelah diperoleh skor total, maka penilaian tingkat penerimaan oleh pengguna pada aplikasi dapat dihitung dengan menggunakan rumus berikut \cite{kuantitatif}:
+         \begin{equation}
+            P = \frac{f}{n} \times 100\%
+         \end{equation}
+         \noindent Keterangan :
+         \\P = Presentase
+         \\n = Jumlah responden
+         \\f = Frekuensi jawaban\\
 
-      \section{Rancangan Pengujian}
+         \begin{table}[ht]
+            \centering
+            \caption{Nilai Presentase}
+            \includegraphics[width=8cm]{images/bab 3/table presentase.png}\\
+            \end{table}
+         \noindent Hasil pengujian UAT merepresentasikan pengujian penerimaan oleh pengguna, berdasarkan pengujian penerimaan tersebut ditarik kesimpulan apakah aplikasi yang telah diuji dapat diterima atau tidaknya oleh pengguna. Presentase yang sudah diolah diklasifikasikan berdasarkan skala penilaian berikut \cite{kuantitatif} : 
+         \begin{figure}[ht]
+            \centering
+            \includegraphics[width=11cm]{images/bab 3/skala.png}\\
+            \caption{Skala Penilaian}
+        \end{figure}
+        \noindent \\Berikut nilai kesimpulan berdasarkan referensi \cite{kuantitatif} :
+        \begin{table}[ht]
+         \centering
+         \caption{Nilai Kesimpulan}
+         \includegraphics[width=8cm]{images/bab 3/Kesimpulan.png}\\
+         \end{table}
+         \noindent \\Jika nilai akhir dari perhitungan ternyata didapatkan hasil desimal, maka dapat dibulatkan ke nilai terdekat.\\
+      
+         \section{Rancangan Pengujian}
+         Terdapat dua pengujian yang digunakan dalam penelitian ini. Pertama pengujian fungsionalitas dengan 
+         menggunakan metode \emph{black box testing}, dan yang kedua menggunakan metode pengujian \emph{User 
+         Acceptance Testing} (UAT) guna mengetahui tingkat penerimaan pengguna. Kedua pengujian tersebut akan
+          dirancang komponen pengujiannya setelah penelitian sudah melewati proses pemodelan proses yakni tahap sebelum tahap pembuatan aplikasi dalam penelitian ini.\\
+            % \subsection{\emph{Black box testing}}
+            % Karena aplikasi dirancang hanya untuk satu jenis pengguna (pelanggan), maka pengujian fungsionalitas tertera hanya kepada 1 role pengguna. Pengujian nantinya dirancang setelah penelitian berjalan, sehingga diketahui komponen apa saja yang perlu diuji secara fungsionalitas.\\
+            %    % \subsubsection{Pengujian Halaman Login}
+            %    % \subsubsection{Pengujian Bagian Menu Alat}
+            %    % \subsubsection{Pengujian Halaman Home}
+            
+            % \subsection{Pengujian \emph{User Acceptance Testing} (UAT)}
 
    
    \end{justify}
