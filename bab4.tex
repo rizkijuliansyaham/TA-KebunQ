@@ -56,7 +56,7 @@
         (2) tabel kontrols, digunakan untuk menyimpan dan mendefinisikan kontrol yang dimiliki, 
         (3) tabel realtime\_data, digunakan untuk menyimpan data realtime sensor dan kontrol,
         (4) tabel status\_users, digunakan untuk menyimpan status alat apakah \emph{online} atau \emph{offline},
-        dan (5) tabel users, digunakan untuk menyimpan data user. Setelah skema \emph{database} difinalisasi, 
+        dan (5) tabel users, digunakan untuk menyimpan data user. Dapat dilihat juga bahwa tabel user berada di tengah dan memiliki relasi \emph{one to many} ke keempat tabel lain. Setelah skema \emph{database} difinalisasi, 
         maka dilakukan pembuatan \emph{Application Programming Interface} (API) dan konfigurasi server yang dalam bagian ini 
         pengerjaan bukan dilakukan oleh peneliti namun oleh anggota lain dalam proyek. 
         Sehingga akhirnya didapat beberapa API (\emph{dummy}) sebagai berikut dengan \emph{endpoint} yang dirahasiakan demi keamanan aplikasi :
@@ -92,6 +92,8 @@
                 \includegraphics[width=8cm]{images/bab 4/fc 1.png}
                 \caption{\textit{flowchart} bagian 1 (mulai)}
             \end{figure}
+
+            Testing
             \begin{figure}[ht]
                 \centering
                 \includegraphics[width=12cm]{images/bab 4/fc-kontrol.png}
