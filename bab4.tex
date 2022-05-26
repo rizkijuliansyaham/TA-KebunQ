@@ -125,47 +125,54 @@
                 \includegraphics[width=10cm]{images/bab 4/Sequence login.png}
                 \caption{\textit{Sequence Diagram Login}}
             \end{figure}
+            \\Pada Gambar 4.6 menunjukkan gambaran proses ketika pengguna melakukan \emph{login}. Dimulai dengan pengguna memberikan \emph{input} \emph{username} dan \emph{password} pada halaman \emph{login}. Kemudian aplikasi melakukan \emph{authentication} atau proses pengecekan data apakah sesuai dengan yang tersedia pada server. Ketika data tersebut sesuai, maka aplikasi akan melakukan pengambilan data dan pada halaman \emph{home}
+            akan menampilkan \emph{username} pengguna.\\
             \begin{figure}[ht]
                 \centering
                 \includegraphics[width=10cm]{images/bab 4/buka menu alat.png}
                 \caption{\textit{Sequence Diagram} Melihat Menu / Alat}
             \end{figure}
-            \vspace{10cm}
+            \\Pada Gambar 4.7 menunjukkan gambaran proses ketika pengguna melihat menu. Setelah melewati proses \emph{login}, pengguna memilih menu pada halaman \emph{home} kemudian aplikasi akan melakukan pengambilan data ke server dan menampilkan hasilnya pada menu.
             \begin{figure}[ht]
                 \centering
                 \includegraphics[width=10cm]{images/bab 4/Sequence buka detail alat.png}
                 \caption{\textit{Sequence Diagram} Melihat Detail Alat}
             \end{figure}
-
+            \\Pada Gambar 4.8 menunjukkan gambaran proses ketika pengguna melihat data yang ada pada suatu alat. Dimulai dengan pengguna membuka aplikasi dan setelah berada pada halaman \emph{home} pengguna memilih menu sehingga tampil bagian \emph{drawer}/menu alat yang ada, setelah itu pengguna dapat memilih alat yang berada pada menu tersebut dan aplikasi akan melakukan pengiriman data id yang dipilih ke server, 
+            kemudian aplikasi akan menampilkan data yang ada dari alat tersebut pada halaman \emph{home}.
+            \vspace{4cm}
             \begin{figure}[ht]
                 \centering
                 \includegraphics[width=10cm]{images/bab 4/Sequence kontrol.png}
                 \caption{\textit{Sequence Diagram} Melakukan Kontrol}
             \end{figure}
+            \\Pada Gambar 4.9 menunjukkan gambaran proses ketika pengguna melakukan kontrol. Setelah berada pada halaman \emph{home} dan menampilkan bagian alat yang terpilih, pengguna dapat menginputkan kontrol \emph{on/off} kemudian aplikasi akan menampilkan data sesuai dengan yang tersedia pada server.
             \begin{figure}[ht]
                 \centering
                 \includegraphics[width=11cm]{images/bab 4/Sequence kontrol Auto.png}
                 \caption{\textit{Sequence Diagram} Melakukan Kontrol Automatis}
             \end{figure}
+            \\Pada Gambar 4.10 menunjukkan gambaran proses ketika pengguna melakukan kontrol otomatis. Dimulai dengan keadaan pengguna yang sudah berada pada tampilan alat yang akan dikontrol memilih kontrol mode otomatis dan memasukkan nilai parameter kontrol tersebut, kemudian aplikasi akan menampilkan data aktual sebagaimana data yang berada pada server.
             \end{enumerate}
-            \vspace{10cm}
+
         \subsubsection{Pembuatan Aplikasi}
         Dalam proses pembuatan aplikasi peneliti melakukan 3 pengerjaan (1) Perancangan desain layout \textit{User Interface}, (2) Pembuatan \textit{assets} mencakup logo aplikasi, ikon sensor, dan ilustrasi kontrol, dan (3) Pengerjaan pembuatan aplikasi menggunakan \textit{framework} Flutter dengan bahasa pemrograman Dart
         \begin{enumerate}
             \item Perancangan Desain Layout \textit{User Interface}
             \begin{figure}[ht]
                 \centering
-                \includegraphics[width=15cm]{images/UI/summary.png}
+                \includegraphics[width=13cm]{images/UI/summary.png}
                 \caption{Rancangan layout UI}
             \end{figure}
-            \vspace{10cm}
+            \\Pada Gambar 4.11 terdapat beberapa halaman yang dibuat berupa \emph{layout} untuk memudahkan pembuatan aplikasi. Halaman
+            tersebut yaitu halaman \emph{splashscreen}, halaman \emph{login}, halaman \emph{home} dan tampilan menu \emph{drawer}.\\
             \item Pembuatan \textit{assets}\\
             \begin{figure}[ht]
                 \centering
-                \includegraphics[width=6cm]{images/logo.png}
+                \includegraphics[width=5cm]{images/logo.png}
                 \caption{\textit{assets} Logo aplikasi}
             \end{figure}
-            \noindent \\Logo aplikasi KEBUNQ yang dirancang memiliki arti sebagai berikut :
+            \noindent \\Logo aplikasi KEBUNQ pada Gambar 4.12 dirancang memiliki arti sebagai berikut :
             \begin{itemize}
                 \item Bentuk koin : menunjukkan bahwa aplikasi KEBUNQ dirancang untuk mendukung program \emph{low cost smart farming}
                 \item Tanda sinyal : menunjukkan penggunaan aplikasi memerlukan konektivitas jaringan internet untuk melakukan pemantauan dan kontrol dari jarak jauh (\emph{online apps})
@@ -174,15 +181,17 @@
             \end{itemize}
             \begin{figure}[ht]
                 \centering
-                \includegraphics[width=7cm]{images/UI/ikon.png}
+                \includegraphics[width=10cm]{images/UI/ikon.png}
                 \caption{\textit{assets} Ikon Sensor}
             \end{figure}
+            \noindent Pada Gambar 4.13 tercantum \emph{asset} ikon sensor yang akan digunakan untuk ditampilkan pada aplikasi. Terdapat 9 buah ikon sebagaimana yang tercantum dalam hasil observasi.
             \begin{figure}[ht]
                 \centering
-                \includegraphics[width=7cm]{images/UI/Frame 1.png}
+                \includegraphics[width=12cm]{images/UI/Frame 1.png}
                 \caption{\textit{assets} Kontrol}
             \end{figure}
-            \noindent Pembuatan \emph{assets} logo, ikon dan ilustrasi bertujuan untuk meningkatkan kemudahan pengguna dalam menggunakan aplikasi KEBUNQ dan menjadikan KEBUNQ sebagai aplikasi yang unik dengan menggunakan \emph{assets} yang orisinil khusus didesain dan digunakan pada aplikasi KEBUNQ. \\
+            \vspace{3cm}
+            \noindent \\Pada Gambar 4.14 mencantumkan \emph{assets} yang akan digunakan pada tampilan kontrol alat, desain yang dibuat tersebut berdasarkan data hasil observasi. Pembuatan \emph{assets} logo, ikon dan ilustrasi bertujuan untuk meningkatkan kemudahan pengguna dalam menggunakan aplikasi KEBUNQ dan menjadikan KEBUNQ sebagai aplikasi yang unik dengan menggunakan \emph{assets} yang orisinil khusus didesain dan digunakan pada aplikasi KEBUNQ. \\
             \item Pembuatan Aplikasi\\
             Implementasi dari perancangan aplikasi KEBUNQ
             \begin{itemize}
@@ -191,17 +200,16 @@
                 Halaman \emph{Splash Screen} dapat dilihat pada Gambar 4.15
                 \begin{figure}[ht]
                     \centering
-                    \includegraphics[width=3cm]{images/bab 4/splash.jpeg}
+                    \includegraphics[width=8cm]{images/bab 4/splash.jpeg}
                     \caption{Tampilan \emph{Splash Screen}}
                 \end{figure}
-
                 \item Halaman \emph{Login}\\
                 Halaman \emph{login} berupa formulir \emph{login} yang diharuskan untuk diisi dengan benar supaya kemudian pengguna dapat menggunakan fitur utama aplikasi KEBUNQ. Halaman login menampilkan \emph{field username} dan \emph{password}.
                 Dalam proses \emph{login} dilakukan pemeriksaan data apakah data yang dimasukkan sesuai dengan \emph{database} atau tidak. Jika ada maka aplikasi KEBUNQ akan menampilkan halaman \emph{Home} dan menampilkan data yang dimiliki oleh pengguna. \
                 Halaman \emph{login} dapat dilihat pada Gambar 4.16
                 \begin{figure}[ht]
                     \centering
-                    \includegraphics[width=3cm]{images/bab 4/login.jpeg}
+                    \includegraphics[width=8cm]{images/bab 4/login.jpeg}
                     \caption{Tampilan Halaman \emph{Login}}
                 \end{figure}
                 \vspace{10cm}
@@ -210,47 +218,57 @@
                 Halaman \emph{Home} dapat dilihat pada Gambar 4.17
                 \begin{figure}[ht]
                     \centering
-                    \includegraphics[width=3cm]{images/bab 4/home.jpeg}
+                    \includegraphics[width=8cm]{images/bab 4/home.jpeg}
                     \caption{Tampilan Halaman \emph{Home}}
                 \end{figure}
                 \newline
+                \vspace{10cm}
                 \item \emph{Drawer}\\
                 \emph{Drawer} merupakan bagian tampilan Menu yang terdapat pada halaman \emph{Home} ketika diklik/disentuh. Menu \emph{drawer} berisikan \emph{list} alat yang tersedia pada akun pengguna. Pada \emph{list} alat tersebut terdapat nama alat dan status keadaan alat sekarang apakah \emph{online} (keadaan nyala) atau \emph{offline} (keadaan mati).
                 Tampilan menu \emph{drawer} dapat dilihat pada Gambar 4.18
                 \begin{figure}[ht]
                     \centering
-                    \includegraphics[width=3cm]{images/bab 4/drawerr.jpeg}
+                    \includegraphics[width=8cm]{images/bab 4/drawerr.jpeg}
                     \caption{Tampilan Menu \emph{Drawer}}
                 \end{figure}
+                \vspace{10cm}
                 \item Tampilan \emph{Loading}
                 Tampilan \emph{loading} merupakan tampilan yang muncul membentuk \emph{shimmer} pada layout yang dibuat ketika aplikasi KEBUNQ menunggu \emph{loading request} data dari API.
                 Tampilan \emph{loading} dapat dilihat pada Gambar 4.19
                 \begin{figure}[ht]
                     \centering
-                    \includegraphics[width=3cm]{images/bab 4/ui-loading.png}
+                    \includegraphics[width=8cm]{images/bab 4/ui-loading.png}
                     \caption{Tampilan \emph{Loading}}
                 \end{figure}
 
             \end{itemize}
         \end{enumerate}
 
+        \vspace{10cm}
             \subsubsection{Pengujian dan Pergantian}
             Pada \emph{testing} aplikasinya menggunakan \emph{black box testing} untuk mencari tahu apakah aplikasi 
             sudah seperti yang dirapkan atau belum. Berikut beberapa tes yang dilakukan dapat dilihat pada Tabel 4.1 dan Tabel 4.2
             \begin{itemize}
                 \item Pengujian Halaman \emph{Login}
+                \vspace{6cm}
                 \begin{table}[ht]
                     \centering
                     \caption{Pengujian Halaman \emph{Login}}
                     \includegraphics[width=12cm]{images/bab 4/fungsional-login.png}\\
                     \end{table}
-                    \vspace{10cm}
-                \item Pengujian Halaman \emph{Home}\\[10cm]
+                    \\Pada Tabel 4.1 dapat dilihat dari  \emph{test case} yang dilakukan untuk melihat apakah fungsionalitas pada halaman \emph{login} sudah sesuai atau belum dengan hasil yang diharapkan. Hasilnya adalah semua \emph{test case} sesuai dengan yang diharapkan setelah beberapa kali perbaikan ketika ditemukan bagian yang tidak sesuai.
+                \item Pengujian Halaman \emph{Home}\\
                 \begin{table}[ht]
                     \centering
                     \caption{Pengujian Halaman \emph{Home}}
-                    \includegraphics[width=11cm]{images/bab 4/fungsional-home.png}\\
+                    \includegraphics[width=12.5cm]{images/bab 4/fungsional-home1.png}\\
                     \end{table}
+                \begin{table}[ht]
+                    \centering
+                    % \caption{Pengujian Halaman \emph{Home}}
+                    \includegraphics[width=13cm]{images/bab 4/fungsional-home2.png}\\
+                    \end{table}
+                \\[2cm]Pada Tabel 4.2 tertera fungsionalitas pada halaman \emph{home} dari 11 \emph{test case} yang disediakan, hasil akhirnya menunjukkan semua seuai dengan yang diharapkan.\\
             \end{itemize}
            
 % \begin{table}[ht]
@@ -278,7 +296,6 @@
 %   \hline
 %  \end{tabular}
 % \end{table}
-        \vspace{8cm}
         \subsection{Uji Lapangan}
         Pada uji lapangan selain mengamati jalannya aplikasi sekaligus dilakukan pengujian UAT untuk mengetahui tingkat penerimaan pengguna dalam menggunakan aplikasi KEBUNQ.
         Setelah data kuesioner dikumpulkan kemudian dilakukan perhitungan persentase dengan cara mengalikan jumlah setiap pilihan jawaban 
@@ -289,20 +306,26 @@
          \noindent Keterangan :
          \\P = Persentase
          \\n = Jumlah responden
-         \\f = Frekuensi jawaban\\
+         \\f = Frekuensi jawaban\\\\
+         Berikut kuesioner yang dilakukan, pertanyaannya dapat dilihat pada Tabel 4.3.
          \begin{table}[ht]
             \centering
             \caption{Kuesioner}
             \includegraphics[width=12cm]{images/bab 4/uat.png}\\
             \end{table}
+            \vspace{10cm}
        \newline \noindent Hasil kuesioner yang didapat kemudian dihitung jumlahnya berdasarkan setiap jawaban, perhitungan dapat dilihat pada tabel 4.4, berikut:\\
         \begin{table}[ht]
             \centering
             \caption{Jumlah Hasil Kuesioner}
-            \includegraphics[width=10cm]{images/bab 4/hitungan.png}\\
+            \includegraphics[width=12cm]{images/bab 4/hitungan1.png}\\
             \end{table}
-            \newline \noindent \\\\\\\\
-            \vspace{5cm}
+        \begin{table}[ht]
+            \centering
+            \includegraphics[width=12cm]{images/bab 4/hitungan2.png}\\
+            \end{table}
+            \vspace{8cm}
+            
             \noindent \\Dari data tertera pada Tabel 4.4, dilakukan perhitungan dengan pemberian bobot pada total setiap jawaban.
             Perhitungan pembobotan dapat dilihat sebagai berikut:
             \begin{itemize}
@@ -318,16 +341,16 @@
                 \item Nilai terendah = 9 x 10 x 1 = \textbf{90}
                 \item Nilai tertinggi = 9 x 10 x 5 = \textbf{450}
              \end{itemize}
-             Hasil perhitungan nilai tertinggi yang didapat adalah 400. Kemudian dilakukan perhitungan persentase menggunaan persamaan sebelumnya, sebagai berikut:
+             Hasil perhitungan nilai tertinggi yang didapat adalah 450. Kemudian dilakukan perhitungan persentase menggunaan persamaan sebelumnya, sebagai berikut:
              \begin{equation}
                 P = \frac{403}{450} \times 100\% = 89,5\%
              \end{equation}
              Berdasarkan perhitungan di atas, didapatkan bahwa tingkat penerimaan terhadap aplikasi KEBUNQ terletak pada rentang 81\% - 100\%, 
              masuk dalam kategori nilai kesimpulan sangat kuat sesuai dengan yang dikemukakan oleh Riduwan dalam referensi \cite{kuantitatif}, dengan nilai perhitungan persentase
-             89,5\%, yang berarti aplikasi KEBUNQ ini dapat diterima oleh pengguna. Hasil persentase tersebut dapat dilihat pada skala penilaian pada Gambar 4.17 berikut ini:
+             89,5\%, yang berarti aplikasi KEBUNQ ini dapat diterima oleh pengguna. Hasil persentase tersebut dapat dilihat pada skala penilaian pada Gambar 4.20 berikut ini:
              \begin{figure}[ht]
                 \centering
-                \includegraphics[width=8cm]{images/bab 4/persentase.png}
+                \includegraphics[width=11cm]{images/bab 4/persentase.png}
                 \caption{Skala penilaian}
             \end{figure}
 
