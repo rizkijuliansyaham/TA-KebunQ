@@ -81,7 +81,7 @@
         
 
         
-
+% PEMODELAN PROSES
         \subsubsection{Pemodelan Proses}
         Berikut beberapa pemodelan proses aplikasi mobile KEBUNQ BPP Lampung yang dirancang setelah menganalisa tahap pemodelan bisnis dan 
             pemodelan data.
@@ -92,25 +92,33 @@
                 \includegraphics[width=8cm]{images/bab 4/fc 1.png}
                 \caption{\textit{flowchart} bagian 1 (mulai)}
             \end{figure}
-            \\ Pada Gambar 4.2 menunjukkan proses  sejak dimulai hingga masuk ke halaman \emph{home}. Ketika dibuka, aplikasi akan menampilkan halaman \emph{splashscreen} kemudian melakukan pengecekan apakah pengguna sudah pernah
+            \\Pada Gambar 4.2 menunjukkan proses  sejak dimulai hingga masuk ke halaman \emph{home}. Ketika dibuka, aplikasi akan menampilkan halaman \emph{splashscreen} kemudian melakukan pengecekan apakah pengguna sudah pernah
             melakukan login dengan benar atau belum, jika sudah pernah dan belum melakukan logout maka akan langsung masuk ke halaman \emph{home} dan jika belum, aplikasi akan menampilkan halaman \emph{login}. Pada halaman \emph{login} pengguna diharuskan memasukkan \emph{username} dan \emph{password} dengan benar untuk bisa masuk ke halaman \emph{home}.
+            \vspace{8cm}
             \begin{figure}[ht]
                 \centering
                 \includegraphics[width=12cm]{images/bab 4/fc-kontrol.png}
                 \caption{\textit{flowchart} bagian 2 (kontrol)}
             \end{figure}
+            \\Pada Gambar 4.3 menunjukkan proses pengguna melakukan kontrol. Ketika pengguna memilih fitur kontrol langsung maka aplikasi akan mengirimkan data perintah \emph{on} atau \emph{off}
+            ke server sehingga keadaan data menjadi sesuai dengan data aktual sebagaimana yang tampil pada aplikasi. 
+            Jika tidak melakukan kontrol langsung, maka pengguna bisa melakukan perintah kontrol dengan mode otomatis., dalam proses tersebut pengguna diminta memberikan masukan berupa nilai parameter dan melakukan konfirmasi. Setelah itu data akan dikirim ke \emph{database} dan aplikasi akan menampilkan status kontrol tersebut berada pada mode otomatis.
             \begin{figure}[ht]
                 \centering
                 \includegraphics[width=8cm]{images/bab 4/fc-pilih alat.png}
                 \caption{\textit{flowchart} bagian 3 (selesai)}
             \end{figure}
-            \vspace{10cm}
+            \\Pada Gambar 4.4 menunjukkan proses yang terjadi ketika pengguna membuka menu yang terdapat beberapa opsi pilihan, yaitu (1) memilih alat yang akan ditampilkan datanya, (2) memilih untuk kembali ke halaman \emph{home}, dan (3) pengguna dapat melakukan \emph{logout}.
+           
             \item \textit{Use Case}
             \begin{figure}[ht]
                 \centering
                 \includegraphics[width=10cm]{images/bab 4/use-case-user.png}
                 \caption{\textit{Use Case Diagram}}
             \end{figure}
+            \\Pada Gambar 4.5 menampilkan gambaran apa saja yang bisa dilakukan pengguna dalam aplikasi KEBUNQ, yaitu pengguna dapat melihat data sensor,
+            melakukan kontrol secara langsung atau mode otomatis, dan melihat keadaan alat apakah \emph{offline / online}. Namun hal tersebut dapat dilakukan pengguna dengan syarat harus melakukan
+            login terlebih dahulu.
             \item \textit{Sequence Diagram}
             \begin{figure}[ht]
                 \centering
