@@ -19,16 +19,13 @@
     \section{Dasar Teori}
 
         \subsection{\textit{Monitoring} dan Kontrol}
-        Monitoring adalah proses pengumpulan
-        dan analisis informasi berdasarkan indikator yang ditetapkan secara sistematis dan
-        berkelanjutan tentang kegiatan/program sehingga dapat dilakukan tindakan
-        koreksi untuk penyempurnaan program/kegiatan itu selanjutnya \cite{Monitoring}.
-        Sistem kontrol atau
-        sistem kendali adalah kumpulan dari beberapa komponen yang terhubung satu
-        sama lainnya, sehingga membentuk suatu tujuan tertentu yaitu mengendalikan
-        atau mengatur suatu sistem \cite{Kontrol}. 
+        Sebuah program yang dijalankan secara berkelanjutan memerlukan pemantauan 
+        yang lebih detail terhadap proses pengumpulan data dan analisis informasi. 
+        Pemantauan ini bertujuan untuk menyempurnakan program sehingga dapat meminimalisir 
+        kesalahan. Dalam referensi \cite{Monitoring} proses pemantauan ini disebut monitoring. 
+        Upaya untuk memonitor program agar berjalan sesuai tujuan maka diperlukannya suatu 
+        tindakan pengendalian. Dalam referensi \cite{Kontrol} sistem ini disebut sistem kontrol. 
         \\
-
         \subsection{Aplikasi \textit{Mobile}}
         Aplikasi \textit{mobile} adalah program perangkat lunak yang dirancang untuk dijalankan di smartphone, tablet, dan perangkat lain \cite{mobile}. Urgensi penggunaan Aplikasi yang dikembangkan berbasis mobile adalah semakin meningkatnya pengguna smartphone yang membutuhkan berbagai macam alat sebagai fasilitator dalam kegiatan sehari-hari. Sebagai fasilitator, aplikasi mobile harus mampu menyediakan informasi agar dapat menjadi sumber data bagi penggunanya dan mampu meningkatkan produktifitas pengguna. 
         \\
@@ -44,34 +41,28 @@
         Berdasarkan Gambar 2.1, dapat diperhatikan penjabaran sebagai berikut :
         \begin{enumerate}[label=\alph*.]
             \item Pemodelan Bisnis\\
-            Pada tahap ini output yang dihasilkan berupa dokumen \textit{Software Requirements Specification} (SRS) yang meliputi informasi ketentuan aplikasi yang akan dibuat. Dokumen tersebut mencakup informasi apa saja yang harus dibuat, siapa yang harus membuat informasi itu, bagaimana alur informasi itu, proses apa saja yang terkait informasi itu.
+            Pemodelan bisnis adalah serangkaian informasi mengenai produk yang dirancang. Informasi tersebut dicantumkan dalam dokumen \emph{Software Requirements Spesification} (SRS) agar dapat divalidasi oleh \emph{stakeholder}. 
             \item Pemodelan Data\\
-            Memodelkan data apa saja yang dibutuhkan berdasarkan pemodelan bisnis dan mendefinisikan atribut-atributnya beserta relasinya dengan data-data yang lain. 
+            Pemodelan data adalah kegiatan merancang dan menghubungkan sekumpulan data berdasarkan pemodelan bisnis.
             \item Pemodelan Proses\\
-            Mengimplementasikan fungsi bisnis yang sudah didefinisikan terkait dengan pendefinisian data. 
+            Pemodelan proses adalah kegiatan mengkonversi pemodelan data menjadi serangkaian alur proses yang bertujuan untuk menggambarkan fungsi bisnis.  
             \item Pembuatan Aplikasi\\
-            Mengimplementasikan pemodelan proses dan data menjadi program. Model RAD sangat menganjurkan pemakaian komponen yang sudah ada jika dimungkinkan.
+            Pembuatan aplikasi adalah  implementasi fungsi bisnis dan model data  kedalam bahasa pemrograman. \emph{Output} yang dihasilkan dari pembuatan aplikasi ini adalah sebuah prototipe. 
             \item Pengujian dan Pergantian\\
-            Menguji komponen-komponen yang dibuat. Jika sudah teruji maka tim pengembang komponen dapat beranjak untuk mengembangkan komponen berikutnya.\\
+            Pengujian dan pergantian adalah kegiatan uji fitur yang tersedia dalam prototipe untuk mengetahui kesesuaian prototipe dengan standar yang diharapkan.\\
         \end{enumerate}
 
         \subsection{Flutter}
-        Flutter merupakan sebuah framework aplikasi mobile yang bersifat open source (terbuka) yang diciptakan oleh Google. Flutter dapat digunakan dalam pengembangan aplikasi mobile untuk sistem operasi Android dan iOS, bahkan juga dapat digunakan dalam pengembangan Web ataupun Desktop dari codebase tunggal. Flutter merupakan framework dengan penggunaan Bahasa Dart.
-        Berikut ini bebrapa kelebihan dari Flutter \cite{flutter} :
-        \begin{enumerate}
-            \item \textit{Package modules} sudah terkoneksi secara otomatis di dalam flutter, sehingga tidak terlalu repot untuk memanggil secara manual melalui terminal
-            \item Dart menggunakan konsep OOP (\textit{Object Orinented Programming})
-            \item \textit{Setup} secara manual jauh lebih mudah, apabila kita memerlukan \textit{library} baru, cukup tambahkan di bagian puspec.yaml
-            \item Performa cepat dan  \textit{smooth}
-            \item Data management menggunakan state sehingga lebih mudah dalam penggunaannya
-            \item Adanya fitur \textit{Hot Reload} yang membantu debug lebih cepat
-            \item Disupport oleh IDE yang sudah familiar dikalangan developer android, seperti Android Studio dan Visual Code\\
-            
-        \end{enumerate}
+        Dalam referensi \cite{flutter} flutter merupakan framework yang menggunaan bahasa pemrograman dart yang dikembangkan oleh Google 
+        dan bersifat \emph{open source} (terbuka). Flutter dapat digunakan dalam pengembangan aplikasi mobile untuk sistem operasi Android dan iOS, 
+        bahkan juga dapat digunakan dalam pengembangan Web ataupun Desktop dari codebase tunggal. 
+        Beberapa kelebihan dari flutter adalah sudah terkoneksinya \textit{Package modules} menjadikan developer tidak harus melakukan proses manual melalui terminal, 
+        sudah menggunakan konsep \textit{Object Orinented Programming} (OOP), sistem penggunaan \emph{library} yang mudah dengan hanya melakukan perubahan pada file puspec.yaml, cepatnya performa dan ketersediaan \emph{hot reload} yang sangat menyingkat waktu 
+        dalam proses \emph{debug}, adanya \emph{state management} sangat memudahkan penggunaannya, dan support oleh IDE yang sering digunakan dikalangan developer seperti Android Studio dan Visual Studio Code.\\
 
 
         \subsection{\textit{Application Programming Interface} (API)}
-            \textit{Application Programming Interface} atau API memungkinkan sebuah perusahaan untuk membuka data dan fungsionalitas aplikasi kepada \textit{developer} pihak ketiga / eksternal, mitra bisnis, dan departemen internal di dalam perusahaan tersebut. 
+            \textit{Application Programming Interface} (API) dapat menjadikan sebuah perusahaan untuk membuka akses data dan fungsionalitas aplikasi kepada \textit{developer} pihak ketiga / eksternal, mitra bisnis, dan departemen internal di dalam perusahaan tersebut. 
             Hal ini memungkinkan layanan dan produk untuk berkomunikasi satu sama lain dan memanfaatkan data dan fungsionalitas satu sama lain melalui \textit{interface} yang terdokumentasi. 
             \textit{Developer} tidak perlu tahu bagaimana API diimplementasikan; \textit{developer} hanya menggunakan \textit{interface} untuk berkomunikasi dengan produk dan layanan lain. 
             Penggunaan API telah melonjak selama dekade terakhir, sampai pada tingkat di mana banyak aplikasi web paling populer saat ini tidak akan mungkin tanpa API \cite{API}. Secara tradisional, API merujuk ke \textit{interface} yang terhubung ke aplikasi yang mungkin telah dibuat dengan salah satu bahasa pemrograman tingkat rendah, seperti Javascript. API modern mematuhi prinsip REST dan format JSON dan biasanya dibuat untuk HTTP, menghasilkan \textit{interface} yang ramah kepada \textit{developer} yang mudah diakses dan dipahami secara luas oleh aplikasi yang ditulis dalam Java, Ruby, Python, dan banyak bahasa lainnya.
