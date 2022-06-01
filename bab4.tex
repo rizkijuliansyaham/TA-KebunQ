@@ -8,33 +8,92 @@
     \begin{justify}
         \section{Hasil Penelitian}
         \subsection{Hasil Observasi}
-        Peneliti mengamati kebutuhan sensor dan kontrol yang sering diaplikasikan pada lahan untuk kebutuhan pembuatan aplikasi KEBUNQ. Didapat data sebagai berikut.\\
+        Peneliti mengamati kebutuhan sensor dan kontrol yang sering diaplikasikan pada lahan secara umum untuk kebutuhan pembuatan aplikasi KEBUNQ. Didapat data sebagai berikut.\\
         \subsubsection{Sensor} 
-        Berikut beberapa sensor yang biasa digunakan pada lahan pertanian yang perlu dicantumkan ke aplikasi KEBUNQ :
+        Beberapa sensor yang akan digunakan pada lahan pertanian yang perlu dicantumkan ke aplikasi KEBUNQ adalah sebagai berikut:
         \begin{enumerate}
-            \item Suhu
-            \item \emph{Humidity}
-            \item Intensitas Cahaya
-            \item Suhu Tanah
-            \item \emph{Humidity} Tanah
-            \item pH Tanah
-            \item Suhu Air
-            \item TDS (ppm meter)
-            \item pH Air\\
+            \item Sensor suhu untuk mengukur nilai suhu ruangan
+            \item Sensor \emph{humidity} untuk mengukur kelembapan
+            \item Sensor intensitas cahaya untuk mengukur intensitas cahaya
+            \item Sensor suhu tanah
+            \item Sensor \emph{humidity} tanah untuk mengukur kelebapan tanah
+            \item Sensor pH tanah untuk mengukur kandungan pH yang terdapat di tanah
+            \item Sensor suhu air untuk mengukur suhu pada air
+            \item Sensor TDS (ppm meter) untuk mengukur kadar TDS (\emph{Total Dissolve Solid}) dalam air.
+            \item Sensor pH air untuk mengukur kandungan pH yang terdapat di air\\
         \end{enumerate}
         \subsubsection{Kontrol}
         Berikut beberapa kontrol yang biasa digunakan pada lahan pertanian yang perlu dicantumkan ke aplikasi KEBUNQ :
         \begin{enumerate}
             \item \emph{Mist} 
+            \\Digunakan untuk melakukan pengabutan, ketika menyala akan mengeluarkan kabut air. 
+            Berikut ilustrasi \emph{mist} dapat dilihat pada Gambar 4.1.\\
+            \begin{figure}[ht]
+                \centering
+                \includegraphics[width=8cm]{images/bab 4/gambar_mist.png}
+                \caption{Ilustrasi \textit{Mist}}
+            \end{figure}
             \item \emph{Sprinkler} 
+            \\Digunakan untuk melakukan penyiraman, ketika menyala \emph{sprinkler} akan menyemprotkan air.
+            Berikut ilustrasi \emph{sprinkler} dapat dilihat pada Gambar 4.2.
+            \begin{figure}[ht]
+                \centering
+                \includegraphics[width=10cm]{images/bab 4/gambar_sprinkler.png}
+                \caption{Ilustrasi \textit{Sprinkler}}
+            \end{figure}
             \item \emph{Fan} 
+            \\Digunakan untuk memberikan hembusan angin, ketika menyala \emph{fan} akan meniupkan angin.
+            Berikut ilustrasi \emph{fan} dapat dilihat pada Gambar 4.3.\\\\
+            \begin{figure}[ht]
+                \centering
+                \includegraphics[width=11cm]{images/bab 4/gambar_fan.png}
+                \caption{Ilustrasi \textit{Fan}}
+            \end{figure}
             \item \emph{Valve} 
+            \\Digunakan untuk membuka alur aliran air selayaknya keran air, ketika menyala \emph{valve} akan membuka aliran air pada selang.
+            Berikut bentuk \emph{valve} dapat dilihat pada Gambar 4.4.
+            \begin{figure}[ht]
+                \centering
+                \includegraphics[width=7cm]{images/bab 4/gambar_valve.jpeg}
+                \caption{Bentuk \textit{Valve}}
+            \end{figure}
             \item \emph{Drip} 
+            \\Digunakan untuk melakukan pemupukan, ketika menyala \emph{drip} akan meneteskan air yang sudah disiapkan.
+            Berikut ilustrasi \emph{drip} dapat dilihat pada Gambar 4.5.
+            \vspace{4cm}
+            \begin{figure}[ht]
+                \centering
+                \includegraphics[width=7cm]{images/bab 4/gambar_drip.png}
+                \caption{Ilustrasi \textit{Drip}}
+            \end{figure}
             \item Pompa 
+            \\Digunakan untuk membantu mengalirkan air, 
+            ketika menyala pompa akan menghisap air dari sumber air yang tersedia.
+            Berikut bentuk pompa dapat dilihat pada Gambar 4.6.
+            \begin{figure}[ht]
+                \centering
+                \includegraphics[width=10cm]{images/bab 4/gambar_pompa.jpeg}
+                \caption{Pompa}
+            \end{figure}
             \item Lainnya (\emph{Customize})\\
+            Dibuat untuk menampung bentuk kontrol ketika terdapat kontrol selain yang tercantum pada poin 1 hingga 6.\\
         \end{enumerate}
         % \caption{Gambar Observasi}
         \subsection{Hasil Penerapan RAD}
+        Sebelum masuk pada pembahasan per proses dalam RAD, berikut dicantumkan jadwal pengerjaan 
+        sistem KEBUNQ secara menyeluruh dengan mengimplementasikan RAD.
+        \begin{figure}[ht]
+            \centering
+            \includegraphics[width=14cm]{images/bab 4/gantt.png}
+            \caption{Jadwal Pengerjaan}
+        \end{figure}
+
+        \noindent Pada Gambar 4.7 dapat dilihat bahwa beberapa pengerjaan dilakukan dengan cara bersamaan 
+        dan paralel oleh anggota tim. Tedapat tiga bagian khusus yang pengerjaannya dibagi, yaitu persiapan server
+        dan pengerjaan \emph{backend} yang dilakukan oleh anggota tim bernama Leja, pembuatan aplikasi yang dikerjakan oleh Rizki (peneliti), dan pengerjaan
+        perancangan alat yang dilakukan oleh anggota tim bernama Ferdian. Pengerjaan proyek ini memiliki \emph{stakeholder} dari pihak BPP Lampung. 
+        
+        Kemudian berikut hasil yang didapatkan dari setiap proses dalam pemngimplementasian RAD:\\
         \subsubsection{Pemodelan Bisnis}
         Berdasarkan hasil analisa ditentukan bahwa aplikasi KEBUNQ dirancang untuk satu jenis pengguna. Sehingga tidak terdapat level pengguna pada akses aplikasi.
         Berikut analisa kebutuhan pengguna
@@ -43,39 +102,80 @@
             \item Pengguna dapat melihat daftar dan status nyala alat
             \item Pengguna dapat melihat detail alat yang terdiri dari data sensor dan kontrol yang tersedia
             \item Pengguna dapat melakukan kontrol pada alat yang dipilih
-            \item Pengguna dapat melakukan setting automatis pada suatu kontrol yang tersedia mode automatisnya\\
+            \item Pengguna dapat melakukan setting automatis pada suatu kontrol yang tersedia mode automatisnya
         \end{enumerate}
-       
+       Dari proses pemodelan bisnis ini juga sekaligus dibuat SRS yang terdapat pada lampiran penelitian.\\
         \subsubsection{Pemodelan Data}
         \begin{figure}[ht]
             \centering
-            \includegraphics[width=8cm]{images/database.png}
+            \includegraphics[width=12cm]{images/database.png}
             \caption{Skema Tabel \textit{Database}}
         \end{figure}
-        \noindent \\Setelah dilakukan tahap pemodelan bisnis, maka didapatkan skema \emph{database} yang dirancang seperti gambar 4.1 di atas. \emph{Database} terdiri dari lima tabel yakni (1) tabel data, digunakan untuk menyimpan data time series dari nilai sensor yang ada pada alat, 
-        (2) tabel kontrols, digunakan untuk menyimpan dan mendefinisikan kontrol yang dimiliki, 
-        (3) tabel realtime\_data, digunakan untuk menyimpan data realtime sensor dan kontrol,
-        (4) tabel status\_users, digunakan untuk menyimpan status alat apakah \emph{online} atau \emph{offline},
-        dan (5) tabel users, digunakan untuk menyimpan data user. Dapat dilihat juga bahwa tabel user berada di tengah dan memiliki relasi \emph{one to many} ke keempat tabel lain. Setelah skema \emph{database} difinalisasi, 
+        \noindent Setelah dilakukan tahap pemodelan bisnis, maka didapatkan skema \emph{database} yang 
+        dirancang seperti gambar 4.8 di atas. \emph{Database} terdiri dari lima tabel yaitu sebagai berikut:
+        \begin{enumerate}
+            \item Tabel data, digunakan untuk menyimpan data time series dari nilai sensor yang ada pada alat, 
+            \item Tabel kontrols, digunakan untuk menyimpan dan mendefinisikan kontrol yang dimiliki, 
+            \item Tabel realtime\_data, digunakan untuk menyimpan data realtime sensor dan kontrol,
+            \item Tabel status\_users, digunakan untuk menyimpan status alat apakah \emph{online} atau \emph{offline},
+            \item Tabel users, digunakan untuk menyimpan data user.
+        \end{enumerate}
+        Dapat dilihat juga bahwa tabel user berada di tengah dan memiliki relasi \emph{one to many} ke keempat tabel lain. Setelah skema \emph{database} difinalisasi, 
         maka dilakukan pembuatan \emph{Application Programming Interface} (API) dan konfigurasi server yang dalam bagian ini 
         pengerjaan bukan dilakukan oleh peneliti namun oleh anggota lain dalam proyek. 
         Sehingga akhirnya didapat beberapa API (\emph{dummy}) sebagai berikut dengan \emph{endpoint} yang dirahasiakan demi keamanan aplikasi :
             \begin{itemize}
                 \item API login\\
                 http://47.89.212.89/dummyBackend/(\emph{endpoint})
+                \\Digunakan untuk melakukan \emph{post login}.
                 \item API \emph{Summary Data} dari pengguna\\
-                http://47.89.212.89/dummyBackend/data/(\emph{endpoint})
+                http://47.89.212.89/dummyBackend/data/(\emph{endpoint})\\
+                Merupakan data rangkuman dari keseluruhan data yang dimiliki seorang pengguna. 
+                Berikut contoh tampilan API
+                \emph{Summary Data} dari pengguna dapat dilihat pada Gambar 4.9.
+                \begin{figure}[ht]
+                    \centering
+                    \includegraphics[width=9cm]{images/bab 4/api/summary.png}
+                    \caption{API \textit{Summary} Pengguna}
+                \end{figure}
                 \item API data \emph{realtime}\\
-                http://47.89.212.89/dummyBackend/data/mobile/(\emph{endpoint})
+                http://47.89.212.89/dummyBackend/data/mobile/(\emph{endpoint})\\
+                Merupakan API yang menyediakan bagian data \emph{realtime} dari sebuah alat yang dimiliki pengguna.
+                Berikut contoh tampilan API data
+                \emph{realtime} dapat dilihat pada Gambar 4.10.
+                \begin{figure}[ht]
+                    \centering
+                    \includegraphics[width=9cm]{images/bab 4/api/realtime.png}
+                    \caption{API \textit{Summary} Pengguna}
+                \end{figure}
                 \item API data kontrol\\
-                http://47.89.212.89/dummyBackend/kontrol/(\emph{endpoint})
+                http://47.89.212.89/dummyBackend/kontrol/(\emph{endpoint})\\
+                Merupakan API yang berisikan data kontrol dari sebuah alat yang dimiliki pengguna.
+                Berikut contoh tampilan API data kontrol
+                dapat dilihat pada Gambar 4.11.
+                \vspace{8cm}
+                \begin{figure}[ht]
+                    \centering
+                    \includegraphics[width=11cm]{images/bab 4/api/kontrol.png}
+                    \caption{API Data Kontrol}
+                \end{figure}
                 \item API data ikon\\
                 http://47.89.212.89/dummyBackend/(\emph{endpoint}) \\
                 (\emph{endpoint} berada pada API data \emph{realtime})
                 \item API status alat\\
-                http://47.89.212.89/dummyBackend/status/(\emph{endpoint})
+                http://47.89.212.89/dummyBackend/status/(\emph{endpoint})\\
+                Merupakan API yang berisikan data yang menunjukkan status keadaan alat.
+                Berikut contoh tampilan API status alat
+                dapat dilihat pada Gambar 4.12.
+                \vspace{6cm}
+                \begin{figure}[ht]
+                    \centering
+                    \includegraphics[width=11cm]{images/bab 4/api/status.png}
+                    \caption{API Status Alat}
+                \end{figure}
                 \item API update kontrol\\
-                http://47.89.212.89/dummyBackend/kontrol/(\emph{endpoint})
+                http://47.89.212.89/dummyBackend/kontrol/(\emph{endpoint})\\
+                Merupakan API untuk melakukan \emph{post} data update dari masukan pengguna.
             \end{itemize}
         API ini digunakan oleh peneliti dalam tahap pembuatan aplikasi \emph{mobile} KEBUNQ sebagai penghubung antara aplikasi dengan \emph{database server}.\\
         
