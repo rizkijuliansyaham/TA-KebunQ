@@ -30,7 +30,8 @@
         Aplikasi \textit{mobile} adalah program perangkat lunak yang dirancang untuk dijalankan di smartphone, tablet, dan perangkat lain \cite{mobile}. Urgensi penggunaan Aplikasi yang dikembangkan berbasis mobile adalah semakin meningkatnya pengguna smartphone yang membutuhkan berbagai macam alat sebagai fasilitator dalam kegiatan sehari-hari. Sebagai fasilitator, aplikasi mobile harus mampu menyediakan informasi agar dapat menjadi sumber data bagi penggunanya dan mampu meningkatkan produktifitas pengguna. 
         \\
         \subsection{\textit{Rapid Application Development} (RAD)}
-        Dalam referensi \cite{Sukamto} terdapat lima tahapan dalam model RAD : (1) Pemodelan bisnis, (2) Pemodelan data, (3) Pemodelan proses, (4) Pembentukan aplikasi, (5) Pengujian dan \textit{turnover} .
+        Dalam referensi \cite{Sukamto} terdapat lima tahapan dalam model RAD yaitu pemodelan bisnis, pemodelan data, 
+        pemodelan proses, pembuatan aplikasi, serta pengujian dan \textit{turnover}.
         
         \begin{figure}[ht]
             \centering
@@ -53,8 +54,8 @@
         \end{enumerate}
 
         \subsection{Flutter}
-        Dalam referensi \cite{flutter} flutter merupakan framework yang menggunaan bahasa pemrograman dart yang dikembangkan oleh Google 
-        dan bersifat \emph{open source} (terbuka). Flutter dapat digunakan dalam pengembangan aplikasi mobile untuk sistem operasi Android dan iOS, 
+        Dalam referensi \cite{flutter} flutter merupakan framework yang menggunaan bahasa pemrograman dart yang 
+        bersifat \emph{open source} (terbuka) dari Google. Flutter dapat digunakan dalam pengembangan aplikasi \emph{cross-platform} untuk penggunaan pada sistem operasi Android maupun iOS, 
         bahkan juga dapat digunakan dalam pengembangan Web ataupun Desktop dari codebase tunggal. 
         Beberapa kelebihan dari flutter adalah sudah terkoneksinya \textit{Package modules} menjadikan developer tidak harus melakukan proses manual melalui terminal, 
         sudah menggunakan konsep \textit{Object Orinented Programming} (OOP), sistem penggunaan \emph{library} yang mudah dengan hanya melakukan perubahan pada file puspec.yaml, cepatnya performa dan ketersediaan \emph{hot reload} yang sangat menyingkat waktu 
@@ -62,17 +63,26 @@
 
 
         \subsection{\textit{Application Programming Interface} (API)}
-            \textit{Application Programming Interface} (API) dapat menjadikan sebuah perusahaan untuk membuka akses data dan fungsionalitas aplikasi kepada \textit{developer} pihak ketiga / eksternal, mitra bisnis, dan departemen internal di dalam perusahaan tersebut. 
-            Hal ini memungkinkan layanan dan produk untuk berkomunikasi satu sama lain dan memanfaatkan data dan fungsionalitas satu sama lain melalui \textit{interface} yang terdokumentasi. 
-            \textit{Developer} tidak perlu tahu bagaimana API diimplementasikan; \textit{developer} hanya menggunakan \textit{interface} untuk berkomunikasi dengan produk dan layanan lain. 
-            Penggunaan API telah melonjak selama dekade terakhir, sampai pada tingkat di mana banyak aplikasi web paling populer saat ini tidak akan mungkin tanpa API \cite{API}. Secara tradisional, API merujuk ke \textit{interface} yang terhubung ke aplikasi yang mungkin telah dibuat dengan salah satu bahasa pemrograman tingkat rendah, seperti Javascript. API modern mematuhi prinsip REST dan format JSON dan biasanya dibuat untuk HTTP, menghasilkan \textit{interface} yang ramah kepada \textit{developer} yang mudah diakses dan dipahami secara luas oleh aplikasi yang ditulis dalam Java, Ruby, Python, dan banyak bahasa lainnya.
+            \textit{Application Programming Interface} (API) dapat digunakan untuk membuka akses data dan fungsionalitas dari sebuah aplikasi di perusahaan tertentu kepada pihak lain atau pihak internal di dalam perusahaan tersebut. 
+            Hal ini memungkinkan terhubungnya komunikasi antar produk satu dengan lainnya serta memanfaatkan data dan fungsionalitas melalui \textit{interface} yang terdokumentasi. 
+            \textit{Developer} biasa menggunakan \textit{interface} untuk menghubungkan sebuah produk dengan layanan produk lain bahkan tanpa perlu mengetahui bagaimana API diimplementasikan. 
+            Penggunaan API telah menjadi hal tak terlepaskan dari pengembangan \emph{software}, sampai banyak aplikasi web paling populer saat ini tidak akan mungkin tanpa API \cite{API}. 
+            API secara tradisional merujuk ke \textit{interface} yang terhubung ke aplikasi lain. Dalam aplikasi lain tersebut mungkin telah dibuat dengan salah satu bahasa pemrograman tingkat rendah, seperti Javascript. 
+            API biasanya dibuat untuk HTTP serta mematuhi prinsip REST dan format JSON, menghasilkan \textit{interface} yang ramah kepada \textit{developer} dan mudah diakses serta dipahami oleh pengembangan \emph{software} 
+            dan aplikasi yang dibuat dengan bahasa pemrograman yang ada saat ini.
             \\
 
 
         \subsection{\textit{Database}}
-            \textit{Database} adalah \textit{collection} dari informasi terstruktur yang terorganisir atau data, biasanya disimpan secara elektronik dalam sistem komputer \cite{Database}. Sebuah \textit{database} biasanya dikendalikan oleh \textit{Database Management System} (DBMS). Data dan DBMS bersama dengan aplikasi yang terkait dengannya disebut sebagai sistem basis data atau sering disingkat menjadi basis data saja.
-            Data dalam tipe \textit{database} yang paling umum yang beroperasi saat ini biasanya dimodelkan sebagai baris dan kolom dalam serangkaian tabel untuk membuat pemrosesan dan kueri data menjadi efisien. Data kemudian dapat dengan mudah diakses, dikelola, dimodifikasi, diperbarui, dikendalikan, dan diatur. Sebagian besar \textit{database} menggunakan \textit{structured query language} (SQL) untuk menulis dan mengolah data. 
-            Salah satu SQL yang sering digunakan adalah MySQL yang merupakan sistem manajemen basis data relasional yang tersedia \textit{open source} sehingga memudahkan pengguna.
+            \textit{Database} adalah \textit{collection} data atau informasi yang terstruktur dan terorganisir, 
+            tersimpan dalam sistem komputer \cite{Database}. Sebuah \textit{database} dikeelola oleh \textit{Database Management System} (DBMS). 
+            Data, DBMS dan aplikasi yang saling terkait disebut sebagai sistem basis data yang sering dikenal dengan sebutan basis data.
+            \textit{Database} yang paling umum beroperasi saat ini biasanya dimodelkan sebagai baris dan kolom dalam 
+            serangkaian tabel yang digunakan untuk meningkatkan efisiensi dalam pemrosesan kueri data. 
+            Kemudian data dapat diakses dengan mudah untuk melakukan pengelolaan, modifikasi, dan perbaharuan. 
+            Sebagian besar \textit{database} menggunakan \textit{structured query language} (SQL) untuk menulis 
+            dan mengolah data. Salah satu SQL yang sering digunakan adalah MySQL yang merupakan sistem 
+            manajemen basis data relasional yang merupakan perangkat lunak \textit{open source}.
             \\
         \subsection{\textit{Flowchart}}
             \textit{Flowchart} sering juga disebut dengan \textit{process flowchart, process flow diagram} atau diagram alir. Flowchart adalah gambaran langkah-langkah terpisah dari suatu proses secara berurutan. 
@@ -106,15 +116,14 @@
             \end{figure}
 
         \subsection{\emph{Sequence Diagram}}
-        \emph{Sequence diagram} adalah suatu diagram yang menggambarkan interaksi antar objek dan mengindikasikan 
-        komunikasi diantara objek-objek tersebut \cite{buku scholar}. Diagram ini sekaligus menunjukkan serangkaian 
-        pesan yang diperlukan oleh objek-objek yang aktif. Objek tersebut dibaca dan diurutkan dari kiri ke kanan, 
-        aktor yang menginisiasi interaksi ditaruh pada bagian paling kiri dalam diagram. Dimensi vertikal pada diagram 
-        ini menunjukkan representasi waktu. Bagian paling atas menjadi titik awal dan waktu berjalan ke bawah. Garis 
-        vertikal tersebut disebut \emph{lifeline}, diposisikan pada setiap objek atau aktor. \emph{lifeline} 
-        digambarkan menjadi kotak (\emph{activation box}) ketika objek melakukan sebuah operasi sekaligus disebut 
-        objek mempunyai \emph{live activation}. Pesan antar objek digambarkan dengan sebuah panah yang di atasnya 
-        diberikan label keterangan.  \\
+        \emph{Sequence diagram} menggambarkan hubungan dan komunikasi antar objek \cite{buku scholar} sekaligus 
+        menunjukkan serangkaian pesan yang diperlukan oleh objek-objek yang aktif. Objek dibaca dan diurutkan dari kiri ke kanan, 
+        aktor yang menginisiasi interaksi ditaruh pada bagian paling kiri dan diikuti oleh objek setelahnya. 
+        Dimensi vertikal merepresentasikan berjalannya waktu. Bagian paling atas menjadi titik awal dan 
+        waktu berjalan ke bawah. Garis vertikal itu disebut juga sebagai \emph{lifeline}, pasti dimiliki setiap objek atau aktor. 
+        \emph{Lifeline} ditampilkan dalam bentuk kotak yang juga dikenal sebagai \emph{activation box}. 
+        ketika objek melakukan sebuah operasi, keadaan ini disebut sebagai \emph{live activation}. 
+        Pesan antar objek digambarkan dengan sebuah panah yang di atasnya diberikan label keterangan.\\
 
         \subsection{\textit{Black Box Testing}}
         Pengujian \emph{black box} adalah salah satu metode pengujian \emph{software} yang berfokus pada bagian fungsionalitas, terkait \emph{input} dan \emph{output} yang ada apakah sudah sesuai dengan yang dituju atau belum. Tahan pengujian atau \emph{testing} merupakan hal wajib dalam siklus pengembangan perangkat lunak \cite{black box}.\\
