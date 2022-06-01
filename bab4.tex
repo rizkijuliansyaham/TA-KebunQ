@@ -146,7 +146,7 @@
                 \begin{figure}[ht]
                     \centering
                     \includegraphics[width=9cm]{images/bab 4/api/realtime.png}
-                    \caption{API \textit{Summary} Pengguna}
+                    \caption{API Data \textit{Realtime}}
                 \end{figure}
                 \item API data kontrol\\
                 http://47.89.212.89/dummyBackend/kontrol/(\emph{endpoint})\\
@@ -161,7 +161,7 @@
                 \end{figure}
                 \item API data ikon\\
                 http://47.89.212.89/dummyBackend/(\emph{endpoint}) \\
-                (\emph{endpoint} berada pada API data \emph{realtime})\\
+                (\emph{endpoint} berada pada API data \emph{realtime}) yang tertera pada Gambar 4.10\\
                 Merupakan data yang menyimpan lokasi \emph{asset} ikon sensor.
                 \item API status alat\\
                 http://47.89.212.89/dummyBackend/status/(\emph{endpoint})\\
@@ -190,10 +190,11 @@
             \item \emph{Flowchart}\\
             \begin{figure}[ht]
                 \centering
-                \includegraphics[width=8cm]{images/bab 4/fc 1.png}
+                \includegraphics[width=12cm]{images/bab 4/fc 1.png}
                 \caption{\textit{flowchart} bagian 1 (mulai)}
             \end{figure}
-            \\Pada Gambar 4.2 menunjukkan proses  sejak dimulai hingga masuk ke halaman \emph{home}. Ketika dibuka, aplikasi akan menampilkan halaman \emph{splashscreen} kemudian melakukan pengecekan apakah pengguna sudah pernah
+            \vspace{12cm}
+            \\\\Pada Gambar 4.13 menunjukkan proses  sejak dimulai hingga masuk ke halaman \emph{home}. Ketika dibuka, aplikasi akan menampilkan halaman \emph{splashscreen} kemudian melakukan pengecekan apakah pengguna sudah pernah
             melakukan login dengan benar atau belum, jika sudah pernah dan belum melakukan logout maka akan langsung masuk ke halaman \emph{home} dan jika belum, aplikasi akan menampilkan halaman \emph{login}. Pada halaman \emph{login} pengguna diharuskan memasukkan \emph{username} dan \emph{password} dengan benar untuk bisa masuk ke halaman \emph{home}.
             \vspace{8cm}
             \begin{figure}[ht]
@@ -201,7 +202,7 @@
                 \includegraphics[width=12cm]{images/bab 4/fc-kontrol.png}
                 \caption{\textit{flowchart} bagian 2 (kontrol)}
             \end{figure}
-            \\Pada Gambar 4.3 menunjukkan proses pengguna melakukan kontrol. Ketika pengguna memilih fitur kontrol langsung maka aplikasi akan mengirimkan data perintah \emph{on} atau \emph{off}
+            \\Pada Gambar 4.14 menunjukkan proses pengguna melakukan kontrol. Ketika pengguna memilih fitur kontrol langsung maka aplikasi akan mengirimkan data perintah \emph{on} atau \emph{off}
             ke server sehingga keadaan data menjadi sesuai dengan data aktual sebagaimana yang tampil pada aplikasi. 
             Jika tidak melakukan kontrol langsung, maka pengguna bisa melakukan perintah kontrol dengan mode otomatis., dalam proses tersebut pengguna diminta memberikan masukan berupa nilai parameter dan melakukan konfirmasi. Setelah itu data akan dikirim ke \emph{database} dan aplikasi akan menampilkan status kontrol tersebut berada pada mode otomatis.
             \begin{figure}[ht]
@@ -209,7 +210,7 @@
                 \includegraphics[width=8cm]{images/bab 4/fc-pilih alat.png}
                 \caption{\textit{flowchart} bagian 3 (selesai)}
             \end{figure}
-            \\Pada Gambar 4.4 menunjukkan proses yang terjadi ketika pengguna membuka menu yang terdapat beberapa opsi pilihan, yaitu (1) memilih alat yang akan ditampilkan datanya, (2) memilih untuk kembali ke halaman \emph{home}, dan (3) pengguna dapat melakukan \emph{logout}.
+            \\Pada Gambar 4.15 menunjukkan proses yang terjadi ketika pengguna membuka menu yang terdapat beberapa opsi pilihan, yaitu (1) memilih alat yang akan ditampilkan datanya, (2) memilih untuk kembali ke halaman \emph{home}, dan (3) pengguna dapat melakukan \emph{logout}.
            
             \item \textit{Use Case}
             \begin{figure}[ht]
@@ -217,43 +218,43 @@
                 \includegraphics[width=10cm]{images/bab 4/use-case-user.png}
                 \caption{\textit{Use Case Diagram}}
             \end{figure}
-            \\Pada Gambar 4.5 menampilkan gambaran apa saja yang bisa dilakukan pengguna dalam aplikasi KEBUNQ, yaitu pengguna dapat melihat data sensor,
+            \\Pada Gambar 4.16 menampilkan gambaran apa saja yang bisa dilakukan pengguna dalam aplikasi KEBUNQ, yaitu pengguna dapat melihat data sensor,
             melakukan kontrol secara langsung atau mode otomatis, dan melihat keadaan alat apakah \emph{offline / online}. Namun hal tersebut dapat dilakukan pengguna dengan syarat harus melakukan
             login terlebih dahulu.
             \item \textit{Sequence Diagram}
             \begin{figure}[ht]
                 \centering
-                \includegraphics[width=10cm]{images/bab 4/Sequence login.png}
+                \includegraphics[width=12cm]{images/bab 4/Sequence login.png}
                 \caption{\textit{Sequence Diagram Login}}
             \end{figure}
-            \\Pada Gambar 4.6 menunjukkan gambaran proses ketika pengguna melakukan \emph{login}. Dimulai dengan pengguna memberikan \emph{input} \emph{username} dan \emph{password} pada halaman \emph{login}. Kemudian aplikasi melakukan \emph{authentication} atau proses pengecekan data apakah sesuai dengan yang tersedia pada server. Ketika data tersebut sesuai, maka aplikasi akan melakukan pengambilan data dan pada halaman \emph{home}
+            \\Pada Gambar 4.17 menunjukkan gambaran proses ketika pengguna melakukan \emph{login}. Dimulai dengan pengguna memberikan \emph{input} \emph{username} dan \emph{password} pada halaman \emph{login}. Kemudian aplikasi melakukan \emph{authentication} atau proses pengecekan data apakah sesuai dengan yang tersedia pada server. Ketika data tersebut sesuai, maka aplikasi akan melakukan pengambilan data dan pada halaman \emph{home}
             akan menampilkan \emph{username} pengguna.\\
             \begin{figure}[ht]
                 \centering
-                \includegraphics[width=10cm]{images/bab 4/buka menu alat.png}
+                \includegraphics[width=12cm]{images/bab 4/buka menu alat.png}
                 \caption{\textit{Sequence Diagram} Melihat Menu / Alat}
             \end{figure}
-            \\Pada Gambar 4.7 menunjukkan gambaran proses ketika pengguna melihat menu. Setelah melewati proses \emph{login}, pengguna memilih menu pada halaman \emph{home} kemudian aplikasi akan melakukan pengambilan data ke server dan menampilkan hasilnya pada menu.
+            \\Pada Gambar 4.18 menunjukkan gambaran proses ketika pengguna melihat menu. Setelah melewati proses \emph{login}, pengguna memilih menu pada halaman \emph{home} kemudian aplikasi akan melakukan pengambilan data ke server dan menampilkan hasilnya pada menu.
             \begin{figure}[ht]
                 \centering
                 \includegraphics[width=10cm]{images/bab 4/Sequence buka detail alat.png}
                 \caption{\textit{Sequence Diagram} Melihat Detail Alat}
             \end{figure}
-            \\Pada Gambar 4.8 menunjukkan gambaran proses ketika pengguna melihat data yang ada pada suatu alat. Dimulai dengan pengguna membuka aplikasi dan setelah berada pada halaman \emph{home} pengguna memilih menu sehingga tampil bagian \emph{drawer}/menu alat yang ada, setelah itu pengguna dapat memilih alat yang berada pada menu tersebut dan aplikasi akan melakukan pengiriman data id yang dipilih ke server, 
+            \\Pada Gambar 4.19 menunjukkan gambaran proses ketika pengguna melihat data yang ada pada suatu alat. Dimulai dengan pengguna membuka aplikasi dan setelah berada pada halaman \emph{home} pengguna memilih menu sehingga tampil bagian \emph{drawer}/menu alat yang ada, setelah itu pengguna dapat memilih alat yang berada pada menu tersebut dan aplikasi akan melakukan pengiriman data id yang dipilih ke server, 
             kemudian aplikasi akan menampilkan data yang ada dari alat tersebut pada halaman \emph{home}.
             \vspace{4cm}
             \begin{figure}[ht]
                 \centering
-                \includegraphics[width=10cm]{images/bab 4/Sequence kontrol.png}
+                \includegraphics[width=12cm]{images/bab 4/Sequence kontrol.png}
                 \caption{\textit{Sequence Diagram} Melakukan Kontrol}
             \end{figure}
-            \\Pada Gambar 4.9 menunjukkan gambaran proses ketika pengguna melakukan kontrol. Setelah berada pada halaman \emph{home} dan menampilkan bagian alat yang terpilih, pengguna dapat menginputkan kontrol \emph{on/off} kemudian aplikasi akan menampilkan data sesuai dengan yang tersedia pada server.
+            \\Pada Gambar 4.20 menunjukkan gambaran proses ketika pengguna melakukan kontrol. Setelah berada pada halaman \emph{home} dan menampilkan bagian alat yang terpilih, pengguna dapat menginputkan kontrol \emph{on/off} kemudian aplikasi akan menampilkan data sesuai dengan yang tersedia pada server.
             \begin{figure}[ht]
                 \centering
                 \includegraphics[width=11cm]{images/bab 4/Sequence kontrol Auto.png}
                 \caption{\textit{Sequence Diagram} Melakukan Kontrol Automatis}
             \end{figure}
-            \\Pada Gambar 4.10 menunjukkan gambaran proses ketika pengguna melakukan kontrol otomatis. Dimulai dengan keadaan pengguna yang sudah berada pada tampilan alat yang akan dikontrol memilih kontrol mode otomatis dan memasukkan nilai parameter kontrol tersebut, kemudian aplikasi akan menampilkan data aktual sebagaimana data yang berada pada server.
+            \\Pada Gambar 4.21 menunjukkan gambaran proses ketika pengguna melakukan kontrol otomatis. Dimulai dengan keadaan pengguna yang sudah berada pada tampilan alat yang akan dikontrol memilih kontrol mode otomatis dan memasukkan nilai parameter kontrol tersebut, kemudian aplikasi akan menampilkan data aktual sebagaimana data yang berada pada server.
             \end{enumerate}
 
         \subsubsection{Pembuatan Aplikasi}
@@ -265,7 +266,7 @@
                 \includegraphics[width=13cm]{images/UI/summary.png}
                 \caption{Rancangan layout UI}
             \end{figure}
-            \\Pada Gambar 4.11 terdapat beberapa halaman yang dibuat berupa \emph{layout} untuk memudahkan pembuatan aplikasi. Halaman
+            \\Pada Gambar 4.22 terdapat beberapa halaman yang dibuat berupa \emph{layout} untuk memudahkan pembuatan aplikasi. Halaman
             tersebut yaitu halaman \emph{splashscreen}, halaman \emph{login}, halaman \emph{home} dan tampilan menu \emph{drawer}.\\
             \item Pembuatan \textit{assets}\\
             \begin{figure}[ht]
@@ -273,7 +274,7 @@
                 \includegraphics[width=5cm]{images/logo.png}
                 \caption{\textit{assets} Logo aplikasi}
             \end{figure}
-            \noindent \\Logo aplikasi KEBUNQ pada Gambar 4.12 dirancang memiliki arti sebagai berikut :
+            \noindent \\Logo aplikasi KEBUNQ pada Gambar 4.23 dirancang memiliki arti sebagai berikut :
             \begin{itemize}
                 \item Bentuk koin : menunjukkan bahwa aplikasi KEBUNQ dirancang untuk mendukung program \emph{low cost smart farming}
                 \item Tanda sinyal : menunjukkan penggunaan aplikasi memerlukan konektivitas jaringan internet untuk melakukan pemantauan dan kontrol dari jarak jauh (\emph{online apps})
@@ -285,20 +286,20 @@
                 \includegraphics[width=10cm]{images/UI/ikon.png}
                 \caption{\textit{assets} Ikon Sensor}
             \end{figure}
-            \noindent Pada Gambar 4.13 tercantum \emph{asset} ikon sensor yang akan digunakan untuk ditampilkan pada aplikasi. Terdapat 9 buah ikon sebagaimana yang tercantum dalam hasil observasi.
+            \noindent Pada Gambar 4.24 tercantum \emph{asset} ikon sensor yang akan digunakan untuk ditampilkan pada aplikasi. Terdapat 9 buah ikon sebagaimana yang tercantum dalam hasil observasi.
             \begin{figure}[ht]
                 \centering
                 \includegraphics[width=12cm]{images/UI/Frame 1.png}
                 \caption{\textit{assets} Kontrol}
             \end{figure}
             \vspace{3cm}
-            \noindent \\Pada Gambar 4.14 mencantumkan \emph{assets} yang akan digunakan pada tampilan kontrol alat, desain yang dibuat tersebut berdasarkan data hasil observasi. Pembuatan \emph{assets} logo, ikon dan ilustrasi bertujuan untuk meningkatkan kemudahan pengguna dalam menggunakan aplikasi KEBUNQ dan menjadikan KEBUNQ sebagai aplikasi yang unik dengan menggunakan \emph{assets} yang orisinil khusus didesain dan digunakan pada aplikasi KEBUNQ. \\
+            \noindent \\Pada Gambar 4.25 mencantumkan \emph{assets} yang akan digunakan pada tampilan kontrol alat, desain yang dibuat tersebut berdasarkan data hasil observasi. Pembuatan \emph{assets} logo, ikon dan ilustrasi bertujuan untuk meningkatkan kemudahan pengguna dalam menggunakan aplikasi KEBUNQ dan menjadikan KEBUNQ sebagai aplikasi yang unik dengan menggunakan \emph{assets} yang orisinil khusus didesain dan digunakan pada aplikasi KEBUNQ. \\
             \item Pembuatan Aplikasi\\
             Implementasi dari perancangan aplikasi KEBUNQ
             \begin{itemize}
                 \item Halaman \emph{Splash Screen}\\
                 Merupakan halaman pertama yang dilihat dengan hitungan waktu beberapa detik. Pada aplikasi KEBUNQ, \emph{splash screen} dibuat dengan sedikit implementasi gerak animasi dan mencantumkan logo KEBUNQ dan BPP Lampung.
-                Halaman \emph{Splash Screen} dapat dilihat pada Gambar 4.15
+                Halaman \emph{Splash Screen} dapat dilihat pada Gambar 4.26.
                 \begin{figure}[ht]
                     \centering
                     \includegraphics[width=8cm]{images/bab 4/splash.jpeg}
@@ -307,7 +308,7 @@
                 \item Halaman \emph{Login}\\
                 Halaman \emph{login} berupa formulir \emph{login} yang diharuskan untuk diisi dengan benar supaya kemudian pengguna dapat menggunakan fitur utama aplikasi KEBUNQ. Halaman login menampilkan \emph{field username} dan \emph{password}.
                 Dalam proses \emph{login} dilakukan pemeriksaan data apakah data yang dimasukkan sesuai dengan \emph{database} atau tidak. Jika ada maka aplikasi KEBUNQ akan menampilkan halaman \emph{Home} dan menampilkan data yang dimiliki oleh pengguna. \
-                Halaman \emph{login} dapat dilihat pada Gambar 4.16
+                Halaman \emph{login} dapat dilihat pada Gambar 4.27.
                 \begin{figure}[ht]
                     \centering
                     \includegraphics[width=8cm]{images/bab 4/login.jpeg}
@@ -316,7 +317,7 @@
                 \vspace{10cm}
                 \item Halaman \emph{Home}\\
                 Halaman \emph{Home} merupakan halaman utama yang digunakan pengguna untuk melihat data sensor dan kontrol yang ada. Pengguna dapat melakukan kontrol atau kendali dengan cara menyalakan atau mematikan kontrol maupun memberikan \emph{setting} automatis pada kontrol yang dipilih.
-                Halaman \emph{Home} dapat dilihat pada Gambar 4.17
+                Halaman \emph{Home} dapat dilihat pada Gambar 4.28.
                 \begin{figure}[ht]
                     \centering
                     \includegraphics[width=8cm]{images/bab 4/home.jpeg}
@@ -326,7 +327,7 @@
                 \vspace{10cm}
                 \item \emph{Drawer}\\
                 \emph{Drawer} merupakan bagian tampilan Menu yang terdapat pada halaman \emph{Home} ketika diklik/disentuh. Menu \emph{drawer} berisikan \emph{list} alat yang tersedia pada akun pengguna. Pada \emph{list} alat tersebut terdapat nama alat dan status keadaan alat sekarang apakah \emph{online} (keadaan nyala) atau \emph{offline} (keadaan mati).
-                Tampilan menu \emph{drawer} dapat dilihat pada Gambar 4.18
+                Tampilan menu \emph{drawer} dapat dilihat pada Gambar 4.29.
                 \begin{figure}[ht]
                     \centering
                     \includegraphics[width=8cm]{images/bab 4/drawerr.jpeg}
@@ -335,7 +336,8 @@
                 \vspace{10cm}
                 \item Tampilan \emph{Loading}
                 Tampilan \emph{loading} merupakan tampilan yang muncul membentuk \emph{shimmer} pada layout yang dibuat ketika aplikasi KEBUNQ menunggu \emph{loading request} data dari API.
-                Tampilan \emph{loading} dapat dilihat pada Gambar 4.19
+                Tampilan \emph{loading} dapat dilihat pada Gambar 4.30.
+                \vspace{10cm}
                 \begin{figure}[ht]
                     \centering
                     \includegraphics[width=8cm]{images/bab 4/ui-loading.png}
@@ -344,8 +346,38 @@
 
             \end{itemize}
         \end{enumerate}
+        Bersamaan dengan proses pembuatan aplikasi, sebagaimana tertera pada Gambar 4.7 Halaman 20 
+        dilakukan juga pengerjaan perancangan alat yang dikerjakan oleh anggota tim. Alat yang dibuat tersebut merupakan alat
+        yang akan dipasang pada lahan cabai besar, lahan cabai kecil, dan \emph{screen} hidroponik. 
+        Pada lahan cabai besar alatnya menggunakan Esp32, \emph{soil capasitive sensor}, \emph{one wire temperature sensor}, dan modul relay 4 \emph{channel}.
+        Pada lahan cabai kecil alatnya menggunakan Esp32, \emph{soil capasitive sensor}, \emph{one wire temperature sensor}, dan modul relay 2 \emph{channel}.
+        Pada lahan \emph{screen} hidroponik alatnya menggunakan Esp32, DHT21, lux sensor BH1750, dan modul relay 2 \emph{channel}. 
+        Berikut hubungan rancangan alat secara umum dapat dilihat pada Gambar 4.31.
+        \begin{figure}[ht]
+            \centering
+            \includegraphics[width=12cm]{images/bab 4/alats.png}
+            \caption{Rancangan Alat Secara Umum}
+        \end{figure}
+        \\Pada Gambar 4.31 dapat kita lihat ada 3 komponen utama dari alat yang dirancang yaitu 
+        \emph{microcontroller} Esp32, sensor dan relay yang jumlahnya menyesuaikan dengan kebutuhan. 
+        Aplikasi sudah dirancang akan otomatis mendukung jumlah sensor dan kontrol yang dinamis sesuai dengan 
+        \emph{database}. Untuk detail rancangan alat, berikut salah satu rancangan skematik dari alat yang 
+        dibuat untuk penggunaan pada lahan cabai dapat dilihat pada Gambar 4.32.
+        \begin{figure}[ht]
+            \centering
+            \includegraphics[width=12cm]{images/bab 4/Modul Ruangan.JPG}
+            \caption{Rancangan Skematik Alat Lahan Cabai}
+        \end{figure}
+        \\Pada Gambar 4.32 menunjukkan skematik dari alat yang dibuat untuk lahan cabai yang menggambarkan hubungan
+        dan alur antar pin dari komponen yang ada.
+        \vspace{8cm}
+        \begin{figure}[ht]
+            \centering
+            \includegraphics[width=10cm]{images/bab 4/gunain.jpeg}
+            \caption{Alat Terpasang di Lahan}
+        \end{figure}
+        \\Pada Gambar 4.33 menunjukkan alat yang terpasang dan digunakan pada lahan cabai di BPP Lampung.\\
 
-        \vspace{10cm}
             \subsubsection{Pengujian dan Pergantian}
             Pada \emph{testing} aplikasinya menggunakan \emph{black box testing} untuk mencari tahu apakah aplikasi 
             sudah seperti yang dirapkan atau belum. Berikut beberapa tes yang dilakukan dapat dilihat pada Tabel 4.1 dan Tabel 4.2
@@ -419,11 +451,11 @@
         \begin{table}[ht]
             \centering
             \caption{Jumlah Hasil Kuesioner}
-            \includegraphics[width=12cm]{images/bab 4/hitungan1.png}\\
+            \includegraphics[width=12cm]{images/bab 4/hitungan1-fix.png}\\
             \end{table}
         \begin{table}[ht]
             \centering
-            \includegraphics[width=12cm]{images/bab 4/hitungan2.png}\\
+            \includegraphics[width=12cm]{images/bab 4/hitungan2-fix.png}\\
             \end{table}
             \vspace{8cm}
             
@@ -458,9 +490,14 @@
 
    
         \section{Pembahasan}
-        Pada tahap observasi didapatkan jenis-jenis sensor dan kontrol yang akan dimasukkan pada penentuan bagaimana aplikasi dirancang dan dibuat. Pada tahap pembuatan aplikasi KEBUNQ, peneliti menggunakan \emph{framework Flutter} dengan bahasa pemrograman \emph{Dart}. Dalam penelitian ini dilakukan dua metode pengujian yaitu \emph{black box testing} dan UAT. Pada pengujian \emph{black box} terdapat satu hasil yang tidak sesuai dengan yang diharapkan, yaitu pada
-        pengujian halaman login saat melakukan pengisian \emph{username} yang benar dan \emph{password} yang salah, setelah dilakukan pengecekan permasalahannya terdapat pada API login yang diterima peneliti 
-        belum melakukan validasi password dan hanya melakukan validasi pada \emph{username}. Selanjutnya pada pengujian UAT, didapatkan hasil persentase sebesar 85,77\% yang menunjukkan penerimaan pengguna yang sangat kuat.
+        Pada tahap observasi didapatkan jenis-jenis sensor dan kontrol yang akan dimasukkan pada penentuan 
+        bagaimana aplikasi dirancang dan dibuat menjadi sedinamis mungkin sehingga aplikasi dapat dengan mudah 
+        menampilkan sensor dan kontrol dari alat-alat yang debuat berbeda antara alat satu dengan lainnya. 
+        Pada tahap pembuatan aplikasi KEBUNQ, peneliti menggunakan \emph{framework Flutter} dengan bahasa 
+        pemrograman \emph{Dart}. Dalam penelitian ini dilakukan dua metode pengujian yaitu \emph{black box testing} 
+        dan UAT. Pada pengujian \emph{black box} semua hasil menunjukkan kesesuaian dengan apa yang diharapkan, 
+        sedangkan pada pengujian UAT yang melibatkan 35 responden, didapatkan hasil persentase sebesar 85,77\% yang 
+        menunjukkan penerimaan pengguna yang sangat kuat.
          
 
     
