@@ -1,6 +1,6 @@
 % Tipe dokumen adalah report dengan satu kolom. 
 % Menggatur setting halaman 
-\documentclass[12pt, a4paper, onecolumn, oneside, final]{report}
+\documentclass[12pt, a4paper, onecolumn, oneside, final, onehalfspacing]{report}
 
 % Load konfigurasi LaTeX untuk tipe laporan thesis
 \usepackage{unpam}
@@ -8,6 +8,8 @@
 \usepackage{ragged2e}
 \usepackage{color}
 \usepackage{hyperref}
+\usepackage{setspace}
+
 
 % Daftar pemenggalan suku kata dan istilah dalam LaTeX
 \include{hype.indonesia}
@@ -99,7 +101,7 @@
 	\renewcommand{\footrulewidth}{0.0pt} 
 \pagestyle{fancy}
 
-\onehalfspacing
+
 \include{bab1}
 \include{bab2}
 \include{bab3}
