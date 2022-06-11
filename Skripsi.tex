@@ -27,7 +27,12 @@
 % Gunakan penomeran Romawi (i, ii, iii, ...) setelah bagian ini.
 
 \pagenumbering{roman}
-
+\renewcommand{\headrulewidth}{0.0pt}
+	\fancyhf{} 
+	\fancyhead[R]{\thepage} 
+	\renewcommand{\headrulewidth}{0.0pt}
+	
+\pagestyle{fancy}
 % Judul Laporan
 \include{halaman_judul}
 
